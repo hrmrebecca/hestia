@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Sampler::Application.load_tasks
+Hestia::Application.load_tasks

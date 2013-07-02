@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Sampler::Application.config.secret_key_base = '20990504ec7ffe7fd8a4a59c2de4eae412484a7e85e033355cdb9720825210a1c8653e3a4ca98f98e273f68cae592fbdc15d64f612c1ce5671798200283ac8b4'
+Hestia::Application.config.secret_key_base = '20990504ec7ffe7fd8a4a59c2de4eae412484a7e85e033355cdb9720825210a1c8653e3a4ca98f98e273f68cae592fbdc15d64f612c1ce5671798200283ac8b4'
