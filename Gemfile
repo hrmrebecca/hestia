@@ -15,6 +15,15 @@ gem 'uglifier', '>= 1.3.0'
 # Allow use of haml 
 gem 'haml'
 
+# Allow use of searchlight 
+gem 'searchlight'
+
+# adding named - it was installed when searchlight was, seems to be necessary 
+gem 'named'
+
+# Use dossier 
+gem 'dossier', '2.8.0'
+
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 

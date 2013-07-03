@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   # accounts business logic
 
   def page
-
+    @page ||= params[:per_page].to_i.zero? ? 1 : params[:page].to_i
   end
   
   def per

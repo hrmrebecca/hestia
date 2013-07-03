@@ -1,10 +1,11 @@
 class AccountsController < ::ApplicationController
   def index
-     @accounts = Account.find(25)
-#     @accounts.each do |account|
-     #   @account_status = @accounts.status_state
-     # end
+     search_params = []
+     @accounts ||= Account.find(search_params)
    end
+  
+  def search
 
+  end
   
 end

@@ -1,13 +1,17 @@
+= render "search"
 .box
- .box-title
-  Search Results
+  .box-title
+    Search Results
+  .box-content.nopadding
   .row-fluid
-  .span12
-  .box
-   .box-content
-   .th Account ID
-   .th Status
-   .box
-   .box-content
-   .td= @accounts.id 
-   .td= @accounts.status_state
+  %table.table.table-bordered
+    %thead
+      %tr
+        %th Account ID
+        %th Status
+    %tbody 
+      - @accounts.each do |account|
+        %tr
+          %td= @accounts.id 
+          %td= @accounts.status_state
+    %li= link_to 'Rolling Denials', dossier_report_path('accounts/rolling_denials')
